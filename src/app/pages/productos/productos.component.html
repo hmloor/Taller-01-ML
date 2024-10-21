@@ -1,0 +1,22 @@
+<div class="container">
+  <h2>Lista de Productos</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Imagen</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let prod of mis_productos">
+          <th scope="row">{{ prod.codigo }}</th>
+          <td>{{ prod.nombre }}</td>
+          <td>{{ prod.descripcion }}</td>
+          <td><img src="{{ prod.imagen}}" alt="{{prod.nombre}}"></td>
+        </tr> 
+
+    </tbody>
+  </table>
+</div>
